@@ -1,32 +1,17 @@
 console.log("start")
 
-// const movieEl = document.querySelector("movie__card")
-
-// async function main() {
-//     const movies = await fetch ("http://www.omdbapi.com/?apikey=ed5ec5a7&")
-//     const movieData = await movies.json()
-//     moviesEl.innerHTML = movieData.map((movie__title) => movieHTML(movie__title)).join()
-// }
-// main()
-
-// function loadMovies(title) {
-//     localStorage.setItem("title", title)
-//     window.location.reload
-
-// }
-
-// function movieHTML (title) {`
-
-
 
 async function getMovies() {
-    const movies = await fetch ("http://www.omdbapi.com/?apikey=ed5ec5a7&s")
+    const movies = await fetch ("https://www.omdbapi.com/?apikey=ed5ec5a7&s=titanic")
     const movieData = await movies.json()
-    console.log()
-    movieData
-        .map(
-            (movie) => 
-                `<div class="movie__card">
+
+    console.log(movieData)
+
+
+    
+    movieData.map(movie =>
+    
+   `<div class="movie__card">
                 <div class="movie__title--container">
                     <h2 class="movie__title">movie title</h2>
                     <h4 class="release__date"> release date</h4>
@@ -80,10 +65,10 @@ async function getMovies() {
                         </div>
                     </div>
                 </div>
-            </div>`
-        )
-        .join("")
-getMovies()
+            </div>`)
+    
 }
+getMovies()
+
 
 console.log("end")
