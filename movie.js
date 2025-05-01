@@ -4,14 +4,11 @@ console.log("start")
 async function getMovies() {
     const movies = await fetch ("https://www.omdbapi.com/?apikey=ed5ec5a7&s=titanic")
     const movieData = await movies.json()
+    const movieCardEl = document.querySelector(".movie__card")
 
-    console.log(movieData)
-
-
-    
-    movieData.map(movie =>
-    
-   `<div class="movie__card">
+    movieCardEl.innerHTML = movieData
+        .Search.map((movie) =>
+            {`<div class="movie__card">
                 <div class="movie__title--container">
                     <h2 class="movie__title">movie title</h2>
                     <h4 class="release__date"> release date</h4>
@@ -65,8 +62,8 @@ async function getMovies() {
                         </div>
                     </div>
                 </div>
-            </div>`)
-    
+            </div>`
+            }).join("")
 }
 getMovies()
 
