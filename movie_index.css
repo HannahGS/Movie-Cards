@@ -10,10 +10,8 @@
     position: fixed;
     background-size: cover;
     min-width: 100vw;
-    transform: scale(1.5);
+    max-width: 150vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: -1;
 }
 
@@ -25,7 +23,7 @@ h1 {
 
 h2 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 h3 {
@@ -99,7 +97,9 @@ header {
     
 }
 
+
 .movie__card {
+
     margin: 12px 10vw;
     height: auto;
     border-radius: 24px;
@@ -180,7 +180,7 @@ header {
 }
 
 footer {
-    background-color: darkcyan;
+    background-color: black;
     height: 24px;
     
 }
