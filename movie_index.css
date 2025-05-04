@@ -98,6 +98,61 @@ header {
 }
 
 
+/* SHORT CARDS */
+
+.movies-short{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 10vw; 
+    flex-wrap: wrap;
+}
+
+.movie__card-short {
+    margin-top: 24px;
+    max-width: 32%;
+    height: auto;
+    border-radius: 24px;
+    padding: 2% 4%;
+    backdrop-filter: blur(10px);
+    background: rgba( 255, 255, 255, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    
+    -webkit-backdrop-filter
+    : blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    justify-content: center;
+} 
+
+.movie__title-short {
+    padding-right: 12px 24px;
+    font-size: 32px;
+}
+
+.poster-short {
+    max-width: 90%;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.poster__container-short {
+    display: flex;
+    justify-content: center;
+}
+.movie__title--container-short {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* DETAILED CARDS */
+
+
+
 .movie__card {
 
     margin: 12px 10vw; 
@@ -123,6 +178,7 @@ header {
 
 .movie__title {
     padding-right: 36px;
+
 }
 
 .movie__subtitle--container {
@@ -134,6 +190,10 @@ header {
 
 .rating__container {
     margin-right: 10%;
+}
+
+.release__date {
+    padding: 12px;
 }
 
 .movie__details--container{
