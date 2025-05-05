@@ -77,13 +77,16 @@ header {
     justify-content: space-around;
     margin-bottom: 36px;
 }
+.search__container, .random__container {
+    width: 50%;
+}
 
 .search, button {
     margin-top: 12px;
     padding: 8px;
     color: grey;
     border: none;
-    width: 400px;
+    width: 80%;
     border-radius: 12px;
     text-align: center;
     backdrop-filter: blur(10px);
@@ -110,7 +113,7 @@ header {
 
 .movie__card-short {
     margin-top: 24px;
-    max-width: 32%;
+    width: 32%;
     height: auto;
     border-radius: 24px;
     padding: 2% 4%;
@@ -156,6 +159,7 @@ header {
 .movie__card {
 
     margin: 12px 10vw; 
+    width: 32%;
     height: auto;
     border-radius: 24px;
     padding: 2% 4%;
