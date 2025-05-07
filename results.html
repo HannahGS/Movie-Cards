@@ -9,7 +9,9 @@
     <script src="results.js"></script>
     <title>Document</title>
 </head>
-<img class="background__image" src="/assets/background-circut.png" alt="">
+    <div class="background__image--container">
+        <img class="background__image" src="/assets/pexels-pratikgupta-2748716.jpg" alt="">
+    </div>
 <nav>
     <div class="nav__container">
         <i class="fa-solid fa-bars"></i>
@@ -21,7 +23,7 @@
         <div class="selection__container">
             <div class="search__container">
                 <h3>Search</h3>
-                <input class="search" type="text" placeholder="search here">
+                <input class="search" type="text" placeholder="search here" onchange="onSearchChange()">
             </div>
             <div class="random__container">
                 <h3>Random Movie</h3>
@@ -35,13 +37,12 @@
         <div class="movie__card">
             <div class="movie__title--container">
                 <h2 class="movie__title">movie title</h2>
-                <h4 class="release__date"> release date</h4>
             </div>
+            <div class="movie___keywords">keyword | keyword | keyword</div>
             <div class="movie__subtitle--container">
-                <div class="movie___keywords">keyword | keyword | keyword</div>
+                <h4 class="release__date"> release date</h4>
                 <div class="rating__container">
-                    <h4>rating</h4>
-                    <div class="stars-or-percent">****</div>
+                    <h4>Rated: </h4>
                 </div>
             </div>
             <hr class="solid">
@@ -75,15 +76,9 @@
                             <p class="awards">text text text</p>
                         </div>
                         <div class="movie__details--small">
-                            <h4 class="smaller__subtitles">Awards</h4>
-                            <p class="awards">text text text</p>
+                            <h4 class="smaller__subtitles">Rating</h4>
+                            <p class="awards"></p>
                         </div>
-                        <div class="movie__details--small">
-                            <h4 class="smaller__subtitles">Awards</h4>
-                            <p class="awards">text text text</p>
-                        </div>
-                        
-
                     </div>
                 </div>
             </div>
@@ -95,3 +90,4 @@
     </footer>
         
 </html>
+

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/movie_index.css">
     <script src="https://kit.fontawesome.com/b7128c01a2.js" crossorigin="anonymous"></script>
     <script src="movie.js"></script>
-    <title>Document</title>
+    <title>Movie Night</title>
 </head>
 <div class="background">
-    <img class="background__image" src="/assets/background-circut.png" alt="">
+    <img class="background__image" src="" alt="">
 </div>
 <nav>
     <div class="nav__container">
@@ -23,7 +23,7 @@
         <div class="selection__container">
             <div class="search__container">
                 <h3>Search</h3>
-                <input class="search" type="text" placeholder="search here">
+                <input class="search" type="text" placeholder="search here" onchange="onSearchChange(searchTerm)">
             </div>
             <div class="random__container">
                 <h3>Random Movie</h3>
@@ -50,3 +50,4 @@
     </footer>
         
 </html>
+

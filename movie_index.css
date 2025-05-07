@@ -3,27 +3,29 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'overpass', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+    
 }
 
 .background__image {
     position: fixed;
-    background-size: cover;
     min-width: 100vw;
-    max-width: 150vw;
-    display: flex;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
 }
 
 
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 112px;
+    margin-top: 0;
 }
 
 h2 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 36px;
+    font-size: px;
 }
 
 h3 {
@@ -42,25 +44,26 @@ hr {
 nav {
     position: absolute;
     height: auto;
-    margin: 36px 12vw;
+    padding: 36px 12vw;
     display: flex;
     z-index: 1;
+    
 }
 
 header {
-
+    padding-top: 24px;
     height: auto;
 }
 
 .header__container {
-    margin: 24px 10vw;
+    margin: 0 10vw;
     height: auto;
     display: flex;
     text-align: center;
     flex-direction: column;
     border-radius: 24px;
     backdrop-filter: blur(10px);
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.40 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     
     -webkit-backdrop-filter
@@ -118,7 +121,7 @@ header {
     border-radius: 24px;
     padding: 2% 4%;
     backdrop-filter: blur(10px);
-    background: rgba( 255, 255, 255, 0.65 );
+    background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     
     -webkit-backdrop-filter
@@ -154,17 +157,18 @@ header {
 
 /* DETAILED CARDS */
 
-
+.movies {
+    margin-top: 24px;
+}
 
 .movie__card {
 
     margin: 12px 10vw; 
-    width: 32%;
     height: auto;
     border-radius: 24px;
     padding: 2% 4%;
     backdrop-filter: blur(10px);
-    background: rgba( 255, 255, 255, 0.65 );
+    background: rgba( 255, 255, 255, 0.40 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     
     -webkit-backdrop-filter
@@ -181,8 +185,8 @@ header {
 }
 
 .movie__title {
-    padding-right: 36px;
-
+    padding-right: 10vwpx;
+    font-size: 300%;
 }
 
 .movie__subtitle--container {
@@ -196,9 +200,6 @@ header {
     margin-right: 10%;
 }
 
-.release__date {
-    padding: 12px;
-}
 
 .movie__details--container{
     display: flex;
@@ -216,12 +217,21 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px;
+    padding: 24px 12px 12px 24px;
+    min-width: 30%;
+}
+
+.movie__people--wrapper {
+    padding: 12px;
 }
 
 .movie__left--container {    
-    padding-left: 24px;
+    padding-left: 12px;
     padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     
 }
 
@@ -232,19 +242,8 @@ header {
     padding: 24px 0;
 }
 
-.movie__details--small {
-    padding: 12px;
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-    border-radius: 14px;
-    border: 0.1 solid black;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    
-}
+
 
 footer {
-    background-color: black;
     height: 24px;
-    
 }
