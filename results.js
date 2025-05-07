@@ -59,7 +59,7 @@ function resultDetailsHTML (result) {
     </div>`
 }
 
-async function getDetails() {
+async function getBackground() {
     const imdbID = localStorage.getItem("imdbID")
     const results = await fetch(`https://www.omdbapi.com/?apikey=ed5ec5a7&i=${imdbID}`)
     const resultsData = await results.json()
@@ -67,4 +67,4 @@ async function getDetails() {
     const backgroundImage = document.querySelector("img.background__image")
     backgroundImage.src = resultsData.Poster
 }
-getDetails()
+getBackground()
