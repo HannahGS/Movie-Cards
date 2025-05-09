@@ -255,6 +255,15 @@ header {
 
 footer {
     height: 24px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 24px 0;
+    font-size: 8px;
+    background: rgba( 255, 255, 255, 0.45 );
+    align-items: center;
+    margin-top: 24px;
 }
 
 
