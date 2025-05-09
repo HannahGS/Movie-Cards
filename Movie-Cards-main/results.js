@@ -8,6 +8,9 @@ async function getMovies() {
 }
 getMovies()
 
+
+
+
 function resultDetailsHTML (result) {
     return  `
     <div class= "movie__card">

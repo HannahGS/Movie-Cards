@@ -6,7 +6,6 @@ async function onSearchChange (event) {
     movieCardEl.innerHTML = movieData.Search.map((movie) => 
 
 
-
     `<div class="movie__card-short" onclick= "showMovieDetails('${movie.imdbID}')">
 
             <div class="movie__title--container-short">
@@ -26,7 +25,7 @@ function initialSearch(searchTerm) {
 }
 
 async function getMovies() {
-    const movies = await fetch (`https://www.omdbapi.com/?apikey=ed5ec5a7&s=movie}`)
+    const movies = await fetch (`https://www.omdbapi.com/?apikey=ed5ec5a7&s=kiki's}`)
     const movieData = await movies.json()
     const movieCardEl = document.querySelector(".movies-short")
     movieCardEl.innerHTML = movieData.Search.map((movie) => movieHTML(movie)).join("");

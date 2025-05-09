@@ -7,12 +7,6 @@
     
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-
 .background__image {
     position: fixed;
     min-width: 100vw;
@@ -32,6 +26,7 @@ h1 {
 
 h2 {
     font-family: 'Permanent Marker', cursive;
+    font-size: px;
 }
 
 h3 {
@@ -90,7 +85,7 @@ header {
     width: 50%;
 }
 
-.search {
+.search, button {
     margin-top: 12px;
     padding: 8px;
     color: grey;
@@ -108,8 +103,6 @@ header {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     
 }
-
-
 
 
 /* SHORT CARDS */
@@ -152,11 +145,6 @@ header {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
-.movie__card-short:hover{
-    transform: scale(1.05);
-    transition: 0.4s ease;
-}
-
 .poster__container-short {
     display: flex;
     justify-content: center;
@@ -190,6 +178,12 @@ header {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.movie__title--container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
 
 .movie__title {
     padding-right: 10vwpx;
@@ -215,12 +209,10 @@ header {
 }
 
 .poster {
-    min-width: 300px;
+    max-height: 400px;
     border-radius: 24px;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
-
-
 
 .movie__people--container {
     display: flex;
@@ -255,167 +247,4 @@ header {
 
 footer {
     height: 24px;
-}
-
-
-/* SMALLER SCREENS */
-@media (max-width: 1100px) {
-
-.background__image {
-    position: fixed;
-    min-width: auto;
-    max-width: auto;
-    min-height: 100vh;
-    min-width: 100vw;
-}
-
-h1 {
-    font-size: 72px;
-    padding-bottom: 12px;
-}
-
-h3 {
-    font-size: 36x;
-}
-
-.movie__card-short {
-    width: 48%;
-}
-
-.summary {
-    text-align: center;
-}
-
-.movie__left--container {    
-    align-items: center;
-}
-
-h4 {
-    text-align: center;
-}
-
-.release__date, .rating__container {
-    margin: 0 5%;
-}
-
-.movie__card {
-    text-align: center;
-}
-
-    .movie__details--container{
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-}
-
-}
-
-
-
-
-
-/* TABLETS, LARGE SMARTPHONES */
-@media (max-width: 768px) {
-
-.background__image {
-    position: fixed;
-    min-width: auto;
-    max-width: auto;
-    min-height: 100vh;
-    min-width: 100vw;
-}
-
-.movie__title--container {
-    display: flex;
-    justify-content: center;
-}
-
-.movie__title {
-    font-size: 180%;
-}
-
-
-.movie__subtitle--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1%;
-}
-
-
-
-
-
-.poster {
-    border-radius: 24px;
-    margin-top: 18px;
-    max-width: 80%;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-}
-
-.movie__people--container {
-    align-items: center;
-    text-align: center;
-    padding: 12px 12px 12px 12px;
-    min-width: 30%;
-}
-
-.movie__people--wrapper {
-    padding: 12px;
-}
-
-
-
-.movie__left--subcontainer {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.movie__card-short {
-    width: 100%;
-}
-
-h1 {
-    font-size: 42px;
-    padding-bottom: 12px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-.poster-short {
-    margin-bottom: 12px;
-}
-
-.movie__title--container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.movie__title {
-    font-size: 150%;
-    padding-bottom: 24px;
-}
-
-
-.movie__subtitle--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1%;
-}
-
-h4 {
-    font-size: 24px;
-    text-align: center;
-}
-
-p {
-    font-size: 18px;
-}
 }
